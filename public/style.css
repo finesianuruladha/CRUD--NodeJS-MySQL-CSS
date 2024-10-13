@@ -1,0 +1,92 @@
+body {
+    background-image: url('background.jpg'); /* Gambar latar belakang */
+    background-size: cover; /* Menyesuaikan ukuran gambar */
+    background-position: center; /* Memusatkan gambar */
+    font-family: 'Times New Roman', Times, serif; /* Font utama */
+    text-align: center; /* Teks rata tengah */
+}
+
+h1, h2 {
+    margin-bottom: 30px; /* Jarak bawah */
+    color: rgb(0, 0, 0); /* Warna teks */
+}
+
+table {
+    margin: 20px auto; /* Pusatkan tabel */
+    border-collapse: collapse; /* Hilangkan spasi antar sel */
+    width: 80%; /* Lebar tabel */
+    border-radius: 8px; /* Ujung tumpul */
+    overflow: hidden; /* Efek ujung tumpul */
+}
+
+th, td {
+    border: 1px solid black; /* Border tabel */
+    padding: 10px; /* Jarak dalam sel */
+    text-align: center; /* Rata tengah */
+}
+
+th {
+    background-color: #d77aa5; /* Warna header tabel */
+    font-weight: bold; /* Teks tebal */
+}
+
+td {
+    border-radius: 8px; /* Ujung tumpul */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Warna saat hover */
+}
+
+form {
+    margin: 20px auto; /* Pusatkan form */
+    width: 80%; /* Lebar form */
+}
+
+.add-user-section {
+    border-top: 2px solid #d77aa5; /* Garis pemisah */
+    padding-top: 30px; /* Jarak atas */
+    margin-top: 50px; /* Jarak dari elemen lain */
+}
+
+.form-group {
+    display: flex; /* Elemen dalam satu baris */
+    justify-content: space-between; /* Ruang antar elemen */
+    margin: 10px 0; /* Jarak antar grup */
+}
+
+label {
+    flex: 1; /* Lebar label */
+}
+
+input {
+    flex: 2; /* Lebar input */
+    padding: 8px; /* Jarak dalam input */
+    border-radius: 5px; /* Ujung tumpul */
+    border: 1px solid #ccc; /* Border input */
+}
+
+button {
+    padding: 10px 20px; /* Ukuran tombol */
+    border: none; /* Tanpa border */
+    background-color: #007bff; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    border-radius: 5px; /* Ujung tumpul tombol */
+    cursor: pointer; /* Ubah kursor */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+.edit-link {
+    text-align: center; /* Teks tengah */
+    display: block; /* Membuat link block-level */
+    font-size: 20px; /* Ukuran font */
+    font-weight: bold; /* Teks tebal */
+    color: #007bff; /* Warna link */
+}
+
+.edit-link:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}

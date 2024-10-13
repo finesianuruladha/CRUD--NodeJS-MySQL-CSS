@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crud Node JS - MySQL</title>
+    <link rel="stylesheet" href="/style.css"> 
+</head>
+<body>
+    <h1 style="text-align: center;">Daftar User/Pengguna</h1> 
+    
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Aksi</th>
+        </tr>
+        <% users.forEach(pengguna => { %>
+        <tr>
+            <td><%= pengguna.id %></td>
+            <td><%= pengguna.name %></td>
+            <td><%= pengguna.email %></td>
+            <td><%= pengguna.phone %></td>
+            <td>
+                <a href="/edit/<%= pengguna.id %>">Edit</a>
+                <a href="/delete/<%= pengguna.id %>">Hapus</a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+
+    <div class="add-user-section">
+        <h2 style="text-align: center;">Tambah Pengguna Baru</h2> 
+        <form action="/add" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Nama:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phone" id="phone" required>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Tambah</button>
+        </form>
+    </div>
+</body>
+</html>
